@@ -4,7 +4,7 @@ function setKeys(src, dest) {
   Object.entries(src).forEach(([key, value]) => {
     const type = typeof value;
     const destValue = dest[key];
-    if (type === "string") return (newDest[key] = destValue || "");
+    if (type === "string") return (newDest[key] = destValue || null);
     if (type === "object") {
       newDest[key] = setKeys(value, destValue || {});
       return;
