@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": "github:AshKyd/msgmerge-json",
   "bin": {
     "msgmerge-json": "./index.js"
   },
@@ -11,8 +12,10 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "commander": "^2.19.0"
+  },
   "devDependencies": {
-    "commander": "^2.19.0",
     "mocha": "^5.2.0"
   }
 }
